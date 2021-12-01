@@ -1,0 +1,12 @@
+prime_number = 2
+while prime_number <= 1000:#iterates over the numbers of prime number
+    divider = 2
+    while divider <= prime_number:#iterates over the numbers of divider
+        if prime_number % divider == 0 :#compares whether it is possible to divide modulo
+            break
+        else:
+            divider += 1#increases the divisor by one
+    if prime_number == divider:#compares whether a number can be divided by one
+        print(prime_number)
+    prime_number +=1#increases the prime number by one
+        
