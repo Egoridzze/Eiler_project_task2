@@ -1,0 +1,5 @@
+import numpy as np
+with open('C:/Users/Egor/Documents/test.txt','r') as file:
+    data = np.loadtxt('C:/Users/Egor/Documents/test.txt', delimiter = " ")
+    result=data[0:-3,: ]*data[1:-2,:] * data[2:-1,:]*data[3:,: ]
+    print(np.max(result))
